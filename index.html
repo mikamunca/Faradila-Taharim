@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+<link href="css/jquery.mobile.min.css" rel="stylesheet" type="text/css">
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.mobile.min.js"></script>
+<script src="js/fungsi.js"></script>
+<script src="js/kira.js"></script>
+
+
+</head>
+
+<body>
+<!--This 1st page-->
+<div data-role="page" id="p1"> <!--assign page id-->
+	   <div data-role="header" data-position="fixed">
+			<h3>Utama</h3>
+		</div>
+		<div role="main" class="ui-content">
+		<!--ini grid-->
+		<div class="ui-grid-b ui-responsive">
+			<!--ini row pertama-->
+			<div class="ui-block-a">
+				<h3>Bumi</h3>	
+				<p>
+					Apa ciri-ciri Bumi?
+				<p>
+					<img src="Gambar/Pic2.jpg" width="250"/>
+				</p>
+				</p>
+			</div>
+			
+			<div class="ui-block-b">
+			<p>
+				Dan apakah kaitannya dengan yang ini?
+					<img src="Gambar/Pic.jpg" width="250"/>
+			</p>
+			<p>Jika ingin tahu lebih lanjut, sila ke Page 2
+			</P>
+				<a href="#p2" class="ui-btn" data-transition="flow"> Ke page 2 </a> <!--tambah button dan how the page will transition-->
+			</div>
+		</div>
+	</div>
+	<div data-role="footer" id="p3" data-position="fixed">
+		<!--<h3>Nav Bar</h3>-->
+		<ul data-role="navbar" data-insert="true">
+		<li><a href="#p3">Nav Bar</a></li>
+				</div>
+	
+</div>
+			
+	
+	
+	<!--This 2nd page-->
+<div data-role="page" id="p2"> <!--assign page id-->
+	<div data-role="panel" data-display="overlay" id="panel1">
+			<h3>Isi Kandungan</h3>
+	</div>
+	<div role="collapsible" data-collapsed-icon="carat-d"
+	data-expanded-icon="carat-u">
+		<h3>Pantulan Cahaya</h3>
+		<ul data-role="listview" data-inset="false">
+			<li><a href="Bab1 Sub1.html" data-transition="pop">Pengenalan</a></li>
+			<li>Perturan</li>
+			<li>Kedudukan</li>
+		</ul>
+		<p>
+		</p>
+		 <a href="#p1" class="ui-btn" data-transition="turn" data-direction="reverse"> Ke page 1 </a> <!--tambah button dan how the page will transition-->
+	</div>
+</div>
+	
+	
+	
+	<!--This is 3rd Page-->
+<div data-role="page" id="p3">
+	<div data-role="header" data-position="fixed">
+		<h3>Page 3</h3>
+	</div>
+	<div role="main" class="ui-content">
+		<h3>Isi 3</h3><p>Ini Isi</p>
+	</div>
+	
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+			<li><a href="#p1" data-icon="grid">Utama</a></li>
+			<li><a href="#" data-icon="star">Isi</a></li>
+			<li><a href="#" data-icon="gear" class="ui-btn-active 
+			ui-state-persist">Hubungi</a></li>
+			</ul>
+</div>
+
+	
+	</div>
+	<div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+<h4>Lecturer's Note</h4>
+<ul data-role="listview" data-inset="false">
+		<li><a href="#">Notes Week 1</a></li>
+		<li><a href="#">Notes Week 2</a></li>
+		<li><a href="#">Notes Week 3</a></li>
+</ul>
+</div>
+
+</div>
+	
+</body>
+</html>
+
